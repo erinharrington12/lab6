@@ -84,6 +84,11 @@ public class ShapeTest
 	public void CircleTest()
 	{
 		// TODO: complete this...
+		Shape circle = new Circle("Circle1", 3.0);
+		Assert.assertEquals("Square area incorrect.", 9.0, sqr.getArea(), 0.0001);
+		Assert.assertEquals("Square perimeter incorrect.", 12.0, sqr.getPerimeter(), 0.0001);
+		Assert.assertEquals("Square type incorrect.", "Square", sqr.getShapeType());
+		Assert.assertEquals("Shape ID incorrect.", "Square1", sqr.getId());
 	}
 
 	/**
