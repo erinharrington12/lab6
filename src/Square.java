@@ -1,17 +1,11 @@
 
-public class Square extends Shape {
+public class Square extends Rectangle {
 
-	@Override
-	public double getArea() {
-		// TODO Auto-generated method stub
-		return 0;
+	
+	public Square(String id, double size) {
+		
 	}
-
-	@Override
-	public double getPerimeter() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+	
 
 	@Override
 	public String getShapeType() {

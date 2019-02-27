@@ -33,6 +33,7 @@ public class ShapeSorter
 	public void addShape(Shape s)
 	{
 		// TODO: complete this...
+		shapes.add(s);
 	}
 
 	/**
