@@ -7,19 +7,27 @@ public class Rectangle extends Polygon {
 	
 	
 	public Rectangle(String id, double height, double width) {
+		super(id);
+		this.height = height;
+		this.width = width;
 		
 	}
 	@Override
 	public double getArea() {
 		// TODO Auto-generated method stub
-		return 0;
+		return height * width;
 	}
 
 
+	/**
+	 * Gets the type of the shape.
+	 *
+	 * @return The string "Rectangle"
+	 */
 	@Override
 	public String getShapeType() {
 		// TODO Auto-generated method stub
-		return null;
+		return "Rectangle";
 	}
 
 }

@@ -34,6 +34,11 @@ public class ShapeTest
 	public void RectangleTest()
 	{
 		// TODO: complete this...
+		Shape rect = new Rectangle("Rectangle1", 3.0, 4.0);
+		Assert.assertEquals("Rectangle area incorrect.", 12.0, rect.getArea(), 0.0001);
+		Assert.assertEquals("Rectangle perimeter incorrect.", 14.0, rect.getPerimeter(), 0.0001);
+		Assert.assertEquals("Rectangle type incorrect.", "Rectangle", rect.getShapeType());
+		Assert.assertEquals("Shape ID incorrect.", "Rectangle1", rect.getId());
 	}
 
 	/**
@@ -85,10 +90,10 @@ public class ShapeTest
 	{
 		// TODO: complete this...
 		Shape circle = new Circle("Circle1", 3.0);
-		Assert.assertEquals("Square area incorrect.", 9.0, sqr.getArea(), 0.0001);
-		Assert.assertEquals("Square perimeter incorrect.", 12.0, sqr.getPerimeter(), 0.0001);
-		Assert.assertEquals("Square type incorrect.", "Square", sqr.getShapeType());
-		Assert.assertEquals("Shape ID incorrect.", "Square1", sqr.getId());
+		Assert.assertEquals("Circle area incorrect.", 28.26, circle.getArea(), 0.1);
+		Assert.assertEquals("Circle perimeter incorrect.", 18.85, circle.getPerimeter(), 0.1);
+		Assert.assertEquals("Circle type incorrect.", "Circle", circle.getShapeType());
+		Assert.assertEquals("Shape ID incorrect.", "Circle1", circle.getId());
 	}
 
 	/**
