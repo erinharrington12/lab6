@@ -151,6 +151,6 @@ public abstract class Shape implements Comparable<Shape>
 	public String toString()
 	{
 		// TODO: complete this...
-		return String.format("%s\t ID = %s\t area = %f\t perimeter = %f", getShapeType(), id, getArea(), getPerimeter());
+		return String.format("%s:\t ID = %s\t area = %.3f\t perimeter = %.3f", getShapeType(), id, getArea(), getPerimeter());
 	}
 }
