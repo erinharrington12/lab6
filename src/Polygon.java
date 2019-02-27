@@ -35,7 +35,7 @@ public abstract class Polygon extends Shape
     	// TODO: complete this...
     	double sumSides = 0.0;
     	
-    	for (int i = 1; i < sideLengths.size(); i++)
+    	for (int i = 0; i < sideLengths.size(); i++)
     	{
     		sumSides += sideLengths.get(i);
     	}
